@@ -1,0 +1,72 @@
+
+.checkout
+    &__left 
+        padding-top: 15px
+    &__right
+        padding-top: 15px
+    &-row
+        .checkout-col-6
+            padding: 0 15px
+    &__wrapper
+        max-width: 1440px
+        margin: 0 auto
+        padding-bottom: 100px
+    &__input 
+        position: relative
+
+        input
+            font-family: Poppins!important
+            font-weight: normal
+            font-size: 22px!important
+            height: 56px !important
+            margin-top: 0 !important
+            &::placeholder 
+                font-family: Ilisarniq!important
+                font-weight: 300!important
+                font-size: 14px!important
+                
+        &#field_1_9
+            margin-top: -57px!important
+        
+
+        .ginput_container 
+            &.input_val
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    right: 10px
+                    bottom: 10px
+                    width: 10px
+                    height: 8px
+                    background-image: url(../img/svg/input-val.svg)
+
+.page-template-template-chekout
+    .td-main
+        border-bottom: 18px solid #F14942
+        .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half)
+            max-width: 100%!important
+        .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning
+            max-width: 100%!important
+            background-color: #ffdfe000
+            margin-bottom: 0px!important 
+            border-top: 0px solid #c89797
+            padding-bottom: 0px!important
+            padding-top: 0px!important
+            border-bottom: 1px solid #F14942 !important
+        .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description
+            display: none!important
+        .gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), .gform_wrapper li.gfield_error textarea
+            border: none !important
+        .gform_wrapper div.validation_error
+            display: none
+    
+    .gform_wrapper ul.gform_fields li.gfield
+        margin-top: 0!important
+        padding-right: 0!important
+body .gform_wrapper .top_label div.ginput_container
+    margin-top: 0!important
+
+.gform_footer 
+    img 
+        display: none !important
